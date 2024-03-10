@@ -1,0 +1,254 @@
+@import url("reset.css");
+@font-face {
+    font-family: 'Nunito Sans 10pt';
+    src: url('NunitoSans10pt-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 10pt';
+    src: url('NunitoSans10pt-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans 10pt';
+    src: url('NunitoSans10pt-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+.body {
+    font-size: 16px;
+    font-weight: 400;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+.header{
+    padding: 30px 0;
+}
+.page{
+    font-size: 16px;
+     font-family: monospace;
+   }
+
+.header h1{
+font-size: 24px;
+font-family:monospace;
+color: #1a1a1a;
+padding: 20px;
+}
+
+
+.one {
+    font-family:'Nunito Sans 10pt',sans-serif;
+    font-size: 26px;
+    letter-spacing: 0.01em;
+    padding: 30px 0;
+}
+
+    .aside {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 102px;
+      background: #ececec;
+      transition: width 1s linear;
+      padding: 8px 30px;
+      overflow: hidden;
+  }
+
+  .wrapper{
+    padding-left:100px;
+    transition: padding 1s linear;
+   }
+
+  .aside:hover {
+    width: 300px;
+  }
+
+  .aside:hover .aside-notice{
+    display: block;
+    opacity: 1;
+  }
+
+  .aside-link{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+  }
+
+ .aside-notice{
+color: #1a1a1a;
+font-family: 'Nunito Sans 10pt',sans-serif;
+letter-spacing: -0.16px;
+padding: 0 10px;
+transition: opacity 0.5s ease-in-out;
+opacity: 0;
+  }
+
+  .aside:hover + .wrapper {
+padding-left: 300px;
+  }
+
+  .aside-link:hover .aside-icon{
+transform: scale(1.7);
+transform: rotate(-45deg) scale(1.7);
+  }
+
+  .aside-link div{
+border: 2px solid black;
+border-radius: 5px;
+line-height: 10px;
+padding: 2px;
+transform: rotate(45deg);
+overflow: hidden;
+  }
+
+.aside-link .aside-link-border{
+    border: 2px solid black;
+    line-height: 10px;
+    padding: 2px;
+    border-radius: 5px;
+    transform: rotate(45deg);
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .aside-icon {
+    width: 24px;
+    height: 24px;
+    fill: #1a1a1a;
+    transform: rotate(-45deg);
+    transition: transform .5s linear;
+  }
+
+  /*.list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 100px 0;
+  }*/
+  
+  .list a {
+    display: block;
+  }
+  
+  .icon-list {
+    display: flex;
+    font-family:'Nunito Sans 7pt',sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    width: 24px;
+    height: 24px;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+.table-data {
+  width: 100%;
+  margin-bottom: 50px;
+  border-style: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px #e4e4ef;
+}
+
+.table-data,
+.table-data td,
+.table-data th{
+    border-top: 2px solid ;
+    vertical-align: baseline;
+    border: 1px solid #e4e4ef;
+    border-collapse: collapse;
+}
+
+.table-data th {
+    text-align: left;
+    font-weight: 700;
+    font-family:'Nunito Sans 10pt',sans-serif;
+    font-size: 16px;
+    padding: 18px 16px;
+    width: 300px;
+}
+
+.table-data th + th + th {
+  width: 160px;
+}
+
+.table-data th + th + th {
+  width: auto;
+}
+
+.table-data td{
+    font-family:'Nunito Sans 10pt',sans-serif;
+    font-weight: 400;
+    padding: 8px 16px;
+    vertical-align: middle;
+}
+
+.table-data td p + p {
+font-size: 12px;
+line-height: 20px;
+color: #505050;
+}
+
+.last-item {
+text-align: center;
+width: 150px;
+}
+
+.btn-blue {
+  color: #605dec;
+  background: #ededfe ;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 24px;
+}
+.btn-green{
+  color: green;
+  background: #ebf6eb;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 24px;
+}
+.btn-orange{
+  color: orange;
+  background: #fff4e4;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 24px;
+}
+.btn-red{
+  color: red;
+  background: #fff0f0;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 24px;
+}
+.btn-grey{
+  color: lightgrey;
+  background: #f8f9fb;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 24px;
+}
+
+.tcell{
+  text-align: center;
+}
+
